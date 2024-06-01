@@ -1,61 +1,49 @@
-#Compiled object files
+#C
+# Prerequisites
+*.d
+
+# Object files
 *.o
 *.ko
 *.obj
 *.elf
-*.slo
 
-#Compiled dynamic libraries
-*.so
-*.so.*
-*.dll
-*.dylib
+# Linker output
+*.ilk
+*.map
+*.exp
 
-#Compiled static libraries
-*.lai
-
-#Executables
-*.out
-*.exe
-*.app
-*.hex
-*.i*86
-*.x86_64
-
-#Precompiles Headers
+# Precompiled Headers
 *.gch
 *.pch
 
-#Libraries
+# Libraries
 *.lib
 *.a
 *.la
 *.lo
 
-#Linker output
-*.ilk
-*.map
-*.exp
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
 
-#Prerequisites
-*.d
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
 
-#Debug files
+# Debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
 
-#temporary files
-*.tmp
-*.log
-
-#Backup files
-*~
-*.bak
-*.old
-
-#Kernel Module Compile Results
+# Kernel Module Compile Results
 *.mod*
 *.cmd
 .tmp_versions/
@@ -64,11 +52,20 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+#C++
+#Compiled obj files
+*.slo
+
 #Fortran module files
 *.mod
 *.smod
 
-#Githab backups
+#Compiled Static libraries
+*.lai
+
+#Git
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
 *.orig
 
 #Using merge tools for conflicts
@@ -82,46 +79,63 @@ dkms.conf
 *_REMOTE_*.txt
 
 #Linux
+*~
+
+#Temporary files which can be created if a process still has a handle open of a deleted file
 .fuse_hidden*
+
+#KDE directory preferences
 .directory
+
+#Trash folder
 .Trash-*
+
+#.nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-#VSCode
-*.vsix
-.history/
+#VSCode 
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
+
+#Local History
+.history/
+
+#Built VSCode Extensions
+*.vsix
+
+#VSCode Patch
+# Ignore all local history of files
 .history
 .ionide
 
-#Windows cache files
+#Windows
+#Thumbnail cache files
 Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
-#Windows dump file
+#Dump file
 *.stackdump
 
-#Windows folder cfg file
+#Folder config file
 [Dd]esktop.ini
 
-#Windows recycle bin used on file shares
+#Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-#Windows Installer files
+#Installer files
 *.cab
 *.msi
 *.msix
 *.msm
 *.msp
 
-#Windows shortcuts
+#Shortcuts
 *.lnk
 
 startcpp.exe
