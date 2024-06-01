@@ -7,7 +7,7 @@
 
 #Compiled dynamic libraries
 *.so
-*.so*
+*.so.*
 *.dll
 *.dylib
 
