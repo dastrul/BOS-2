@@ -1,5 +1,5 @@
-SRCDIR=src
 CFLAGS=-g -Wall -Wextra -pedantic
+SRCDIR=src
 
 all: $(SRCDIR)/main.o $(SRCDIR)/liblogger.so
  $(CXX) $(CFLAGS) $(SRCDIR)/main.o -ldl -L$(SRCDIR)/ -lloger -o startcpp.exe
