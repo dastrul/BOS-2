@@ -1,15 +1,15 @@
 CFLAGS=-g -Wall -Wextra -pedantic
 SRCDIR=src
 
-all: $(SRCDIR)/main.o $(SRCDIR)/liblogger.so
- $(CXX) $(CFLAGS) $(SRCDIR)/main.o -ldl -L$(SRCDIR)/ -lloger -o startcpp.exe
+all: $(SRCDIR)/main.o  $(SRCDIR)/liblogger.so
+	$(CXX) $(CFLAGS) $(SRCDIR)/main.o -ldl -L$(SRCDIR)/ -llogger -o startcpp.exe
 
 %.o: %.cpp
-  $(CXX) $(CFLAGS) -c $^ -o $@
+	$(CXX) $(CFLAGS) -c $^ -o $@
 
 $(SRCDIR)/liblogger.so:
-  $(CXX) $(CFLAGS) -shared -fPIC $(SRCDIR)/liblogger.cpp -o $@
+	$(CXX) $(CFLAGS) -shared -fPIC $(SRCDIR)/liblogger.cpp -o $@
 
 clean:
-  rm -rf startcpp.exe
-  rm -rf $(SRCDIR)/*.o $(SRCDIR)/*.so.* $(SRCDIR)/*.a $(SRCDIR)/*.so
+	rm -rf startcpp.exe
+	rm -rf $(SRCDIR)/*.o $(SRCDIR)/*.so.* $(SRCDIR)/*.a $(SRCDIR)/*.so
