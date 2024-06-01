@@ -1,0 +1,28 @@
+#Compiled object files
+*.o
+
+#Compiled dynamic libraries
+*.so
+
+#Executables
+a.out
+a.exe
+
+#Debug files
+*.dSYM/
+*.su
+*.swp
+*.swo
+
+#temporary files
+*.tmp
+*.log
+
+#Backup files
+*~
+*.bak
+*.old
+
+#IDE specific files
+.idea/
+.vscode/
