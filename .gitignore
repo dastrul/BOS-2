@@ -26,3 +26,6 @@ a.exe
 #IDE specific files
 .idea/
 .vscode/
+
+
+startcpp.exe
