@@ -1,18 +1,42 @@
 #Compiled object files
 *.o
+*.ko
+*.obj
+*.elf
+*.slo
 
 #Compiled dynamic libraries
 *.so
+*.so*
+*.dll
+*.dylib
+
+#Compiled static libraries
+*.lai
 
 #Executables
-a.out
-a.exe
+*.out
+*.exe
+*.app
+*.hex
+*.i*86
+*.x86_64
+
+#Linker output
+*.ilk
+*.map
+*.exp
+
+#Prerequisites
+*.d
 
 #Debug files
 *.dSYM/
 *.su
 *.swp
 *.swo
+*.idb
+*.pdb
 
 #temporary files
 *.tmp
