@@ -43,8 +43,6 @@
 #Debug files
 *.dSYM/
 *.su
-*.swp
-*.swo
 *.idb
 *.pdb
 
@@ -56,10 +54,6 @@
 *~
 *.bak
 *.old
-
-#IDE specific files
-.idea/
-.vscode/
 
 #Kernel Module Compile Results
 *.mod*
@@ -83,12 +77,11 @@ dkms.conf
 *.LOCAL.*
 *.REMOTE.*
 *_BACKUP_*.txt
-*.BASE.*.txt
-*.LOCAL.*.txt
-*.REMOTE.*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
 
 #Linux
-*~
 .fuse_hidden*
 .directory
 .Trash-*
