@@ -2,7 +2,7 @@ SRCDIR=src
 CFLAGS=-g -Wall -Wextra -pedantic
 
 all: $(SRCDIR)/main.o $(SRCDIR)/liblogger.so
-  $(CXX) $(CFLAGS) $(SRCDIR)/main.o -ldl -L$(SRCDIR)/ -lloger -o startcpp.exe
+    $(CXX) $(CFLAGS) $(SRCDIR)/main.o -ldl -L$(SRCDIR)/ -lloger -o startcpp.exe
 
 %.o %.cpp
   $(CXX) $(CFLAGS) -c $^ -o $@
